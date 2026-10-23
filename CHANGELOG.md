@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Adds an **overscan fix** for the menus, for TVs that cut off the edges of the screen, and fits more options on one page of the settings menu.
+**v0.8.1** adds a PicoNES PCB design with SNES controller ports. The emulator is unchanged from v0.8.
 
 # General Info
 
@@ -10,6 +10,15 @@ Adds an **overscan fix** for the menus, for TVs that cut off the edges of the sc
 
 > [!IMPORTANT]
 > An **RP2350** board is required. The original RP2040 (Pico 1) is not supported.
+
+# v0.8.1
+
+## What's new
+
+- **PicoNES PCB with SNES controller ports.** PCB design v2.8, designed by John Edgar Park ([@johnedgarpark](https://twitter.com/johnedgarpark)), has two SNES controller ports, so original SNES controllers plug in without an adapter cable. The Gerber file `pico_nesPCB_v2.8_SNES_PORTS.zip` is attached below. See [Custom PCBs](https://github.com/PicoPlus-devel/pico-pcePlus#picones-pcb) in the readme.
+- All PCB designs, with parts lists and pictures, are now described in the [PCB README](https://github.com/PicoPlus-devel/pico_shared/blob/main/PCB/README.md).
+
+The binaries are the same as in v0.8.
 
 # v0.8
 
@@ -251,9 +260,11 @@ For board-by-board wiring, supported display modes, and which UF2 file to flash,
 | Pico 2 / Pico 2 W | [picopcePlus_AdafruitDVISD_pico2_arm.uf2](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/picopcePlus_AdafruitDVISD_pico2_arm.uf2) |
 | Pimoroni Pico Plus 2 | [picopcePlus_AdafruitDVISD_pico2_arm.uf2](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/picopcePlus_AdafruitDVISD_pico2_arm.uf2) |
 
-PCB: [pico_nesPCB_v2.6.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/pico_nesPCB_v2.6.zip) (new in this release, replaces v2.1). [Readme](https://github.com/PicoPlus-devel/pico-pcePlus#picones-pcb)
+PCB with NES controller ports: [pico_nesPCB_v2.6.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/pico_nesPCB_v2.6.zip). [Readme](https://github.com/PicoPlus-devel/pico-pcePlus#picones-pcb)
 
-3D-printed case: [thingiverse.com/thing:6689537](https://www.thingiverse.com/thing:6689537). When the board is fitted on male headers, use the latest top cover; the older covers assume a Pico soldered flat and leave no room for the USB cable.
+PCB with SNES controller ports: [pico_nesPCB_v2.8_SNES_PORTS.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/pico_nesPCB_v2.8_SNES_PORTS.zip). [Readme](https://github.com/PicoPlus-devel/pico-pcePlus#picones-pcb)
+
+3D-printed case for v2.6 (it does not fit v2.8): [thingiverse.com/thing:6689537](https://www.thingiverse.com/thing:6689537). When the board is fitted on male headers, use the latest top cover; the older covers assume a Pico soldered flat and leave no room for the USB cable.
 
 ### PicoNES Mini PCB, Waveshare RP2350-Zero (PCB required)
 
@@ -317,3 +328,9 @@ There is no Pico 2 W binary for this board.
 - Metadata: [PCEMetadata.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/PCEMetadata.zip)
 
 Extract the zip file to the root folder of the SD card. Select a game in the menu and press START to show more information and box art. Works for most official released games. The screensaver shows floating random cover art.
+
+- PCB Gerber files. Upload the zip file unchanged to a PCB manufacturer. See the [PCB README](https://github.com/PicoPlus-devel/pico_shared/blob/main/PCB/README.md) for parts lists and build instructions.
+  - PicoNES v2.6, NES controller ports: [pico_nesPCB_v2.6.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/pico_nesPCB_v2.6.zip)
+  - PicoNES v2.8, SNES controller ports: [pico_nesPCB_v2.8_SNES_PORTS.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/pico_nesPCB_v2.8_SNES_PORTS.zip)
+  - PicoNES Mini (Waveshare RP2350-Zero): [Gerber_PicoNES_Mini_PCB_v2.0.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/Gerber_PicoNES_Mini_PCB_v2.0.zip)
+  - PicoNES Micro (Waveshare RP2350-USB-A): [Gerber_PicoNES_Micro_v1.2.zip](https://github.com/PicoPlus-devel/pico-pcePlus/releases/latest/download/Gerber_PicoNES_Micro_v1.2.zip)
