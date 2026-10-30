@@ -1,6 +1,6 @@
 # CHANGELOG
 
-**v0.8.1** adds a PicoNES PCB design with SNES controller ports. The emulator is unchanged from v0.8.
+**v0.8.2** finds USB controllers at every start on the Adafruit Fruit Jam and other boards with PIO-USB.
 
 # General Info
 
@@ -10,6 +10,12 @@
 
 > [!IMPORTANT]
 > An **RP2350** board is required. The original RP2040 (Pico 1) is not supported.
+
+# v0.8.2
+
+## Fixes
+
+- **USB controllers on the Adafruit Fruit Jam and other boards with PIO-USB are now found at every start.** On boards with an older RP2350 chip they were often not detected.
 
 # v0.8.1
 
